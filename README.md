@@ -1,5 +1,5 @@
-#H1 Nematoduino
+# Nematoduino
 
-Clone from https://github.com/nategri/nematoduino. 
+Clone from https://github.com/nategri/nematoduino
 Added sound.
 
