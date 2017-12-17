@@ -1,14 +1,14 @@
 #ifndef pin_config_h
 #define pin_config_h
 
-// Motor pins
-const uint8_t rightMotorPinA = 9; //Right motor
-const uint8_t rightMotorPinB = 8; //Right motor
-const uint8_t leftMotorPinA = 11; // Left Motor
-const uint8_t leftMotorPinB = 10; //Left Motor
+// Motor pins L298N motor driver board
+const uint8_t rightMotorPinA = 10; //Right motor => IN1 pin 8
+const uint8_t rightMotorPinB = 9; //Right motor => IN2 pin 9
+const uint8_t leftMotorPinA = 12; // Left Motor => IN3 pin 10
+const uint8_t leftMotorPinB = 11; //Left Motor IN4 pin 11
 
 // Button pin (configured so that on is LOW)
-const uint8_t buttonPin = 12;
+const uint8_t buttonPin = 5; //was 12
 
 // Transmit and receive pins for distance sensor
 const uint8_t tPin = A0;//was 2

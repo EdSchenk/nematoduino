@@ -240,8 +240,7 @@ void ActivateMuscles() {
 
 
   int32_t normBodyTotal = 255.0 * ((float) bodyTotal) / 600.0;
-  //debug
-  Serial.println(normBodyTotal);
+  
   normBodyTotalGlob = normBodyTotal; //trigger sound
   
   // Log A and B type motor neuron activity
@@ -284,14 +283,9 @@ void ActivateMuscles() {
   delay(100);
 }
 
-//
-// Standard Arduino setup and loop functions
-//
+
 
 void setup() {
-  // put your setup code here, to run once:
-
-
   //Uncomment for serial debugging
   Serial.begin(9600);
   Serial.println("Nematode is aware!");
@@ -334,6 +328,9 @@ void loop() {
   if (normBodyTotalGlob < 15 && normBodyTotalGlob >1 ) {
     SpeakerBeep(speaker, multiplier, sizeof(multiplier) / sizeof(int));
   }
+  //debug
+  Serial.print("normBodyTotalGlob ");
+  Serial.println(normBodyTotalGlob);
   if (dist < 25.0) {
     // Status LED on
     StatusLedOn();
